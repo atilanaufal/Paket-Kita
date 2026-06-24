@@ -1,0 +1,151 @@
+@import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto Sans:wght@400;500&display=swap');
+
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+
+
+}
+.default-flex {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Make the container at least the height of the viewport */
+}
+
+.wrapper{
+    flex: 1;
+
+
+}
+#map {
+    height: 400px;
+    width: 100%;
+    margin: 20px 0;
+}
+/* Progress Container Styling */
+.progress-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin: 20px 0;
+    position: relative;
+    padding: 10px 0;
+}
+
+/* Default Progress Line */
+.progress-container::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 0; /* Mulai dari kiri container */
+    right: 0; /* Berakhir di kanan container */
+    height: 4px;
+    margin: 3px 0px;
+    background: #e0e0e0; /* Warna garis default */
+    z-index: 0;
+    width: 100%; /* Pastikan garis hanya sepanjang container */
+    transition: width 0.3s ease, background 0.3s ease;
+}
+
+/* Progress Line Hijau Hingga Step 1 */
+.progress-container.step-1::before {
+    background: linear-gradient(to right, #4caf50 0%, #e0e0e0 0%);
+}
+
+/* Progress Line Hijau Hingga Step 2 */
+.progress-container.step-2::before {
+    background: linear-gradient(to right, #4caf50 50%, #e0e0e0 50%);
+}
+
+/* Progress Line Hijau Hingga Step 3 */
+.progress-container.step-3::before {
+    background: #4caf50; /* Semua hijau */
+}
+
+
+/* Progress Step Styling */
+.progress-step {
+    position: relative;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 80px;
+    text-align: center;
+}
+
+/* Number Circle Styling */
+.progress-step span {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: #e0e0e0;
+    font-weight: bold;
+    color: #fff;
+    font-size: 1.2em;
+    margin-bottom: 8px;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Completed Step Styles */
+.progress-step.completed span {
+    background: linear-gradient(135deg, #4caf50, #388e3c);
+    color: #fff;
+    box-shadow: 0 4px 8px rgba(76, 175, 80, 0.5);
+    transform: scale(1.1);
+}
+
+.progress-step.completed p {
+    color: #4caf50;
+    font-weight: bold;
+}
+
+/* Step Description */
+.progress-step p {
+    font-size: 0.9em;
+    color: #757575;
+    margin: 0;
+}
+
+
+
+form {
+    margin: 20px 0;
+}
+input, button {
+    padding: 8px;
+    margin-right: 10px;
+}
+button {
+    background: #4caf50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+.link-active{
+    color: #4caf50;
+
+}
+button:hover {
+    background: #45a049;
+}
+
+.ft-bg {
+    background: #45a049;
+}
+
+.color-theme{
+    background-color: #45a049;
+}
+
+.text-theme{
+    color: #45a049;
+}

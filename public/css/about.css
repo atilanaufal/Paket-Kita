@@ -1,0 +1,190 @@
+
+.text-theme{
+    color: #45a049;
+}
+
+.card-wrapper{
+
+    background-color: #e9ecef;
+    border: none;
+}
+
+.card-desc{
+    font-size: 14px;
+    line-height: 1.6;
+    text-align: justify;
+}
+.full-height {height: 80vh;
+    max-width: 100%;
+
+}
+
+.full-height-2{
+    height: 70vh;
+    max-width: 100%;
+
+}
+
+.occupation-x{
+    border-left: 2.5px solid rgb(255, 29, 29) ;
+    border-right: 2.5px solid rgb(255, 29, 29) ;
+    text-align: start;
+}
+.occupation-l{
+    border-left: 2.5px solid rgb(255, 29, 29) ;
+    text-align: start;
+}
+
+.banner-title {
+    border-bottom: 2.5px solid rgb(255, 29, 29) ;
+    display: inline-block;
+    text-align: start;
+
+}
+.banner-pfp{
+
+  background-image: url("../asset/image/pfp.jpg");
+
+  width: 25%;
+  height: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  display: block;
+  border-radius: 2.5px;
+
+}
+
+.banner-pfp-2{
+
+    background-image: url("../asset/image/upj.jpg");
+
+    width: 25%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: block;
+    border-radius: 2.5px;
+
+}
+.banner-pfp-3{
+    background-image: url("../asset/image/goal.jpg");
+
+    width: 25%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: block;
+    border-radius: 2.5px;
+
+  }
+
+
+
+
+.text-justify {
+    text-align: justify;
+}
+
+
+.bg-card{
+ background-color: rgb(147, 146, 146);
+}
+
+.snk-title {
+    border-bottom: 2.5px solid rgb(255, 29, 29) ;
+}
+
+.snk-icon {
+    max-width: 4rem;
+    max-height: 4rem;
+}
+
+
+
+.acbg-w {
+    width: 60%;
+}
+.mt-sect {
+    margin-top: 8rem;
+}
+
+.acbg-icon {
+    max-width: 8rem;
+    max-height: 8rem;
+}
+.ac-bd-l{
+    border-left: 2.5px solid rgb(255, 29, 29) ;
+    text-align: start;
+}
+/* Custom CSS for w-md-50 */
+@media (min-width: 768px) {
+    .w-md-50 {
+      width: 50%;
+    }
+    .w-md-100 {
+        width: 100%;
+      }
+
+  }
+
+  @media (max-width: 992px) {
+
+      .full-height, .full-height-2 {
+        height: 100vh;
+        max-width: 100%;
+    }
+  }
+@media (max-width: 767.98px) {
+    .w-md-50 {
+      width: 100%;
+    }
+    .w-md-100 {
+        width: 50%;
+      }
+    .banner-pfp, .banner-pfp-2, .banner-pfp-3 {
+        width: 75%; /* Further increase width on very small screens */
+        height: 70%; /* Adjust height accordingly */
+        margin: 20px 0px;
+
+      }
+      .full-height, .full-height-2 {
+        height: 140vh;
+        max-width: 100%;
+    }
+    .nav-text-color-active {
+        font-size: 1rem;
+    }
+    .nav-text-color {
+        font-size: 1rem ;
+    }
+    .ac-bd-l{
+        border: none;
+        text-align: center;
+    }
+
+}
+
+
+
+@media (max-width: 450px) {
+
+
+    .nav-text-color-active {
+        font-size: 0.9rem;
+    }
+
+    .nav-text-color {
+        font-size: 0.9rem ;
+    }
+    .snk-icon {
+        max-width: 30px;
+        max-height: 30px;
+    }
+
+
+}
+
+

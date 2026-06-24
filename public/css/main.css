@@ -1,0 +1,9 @@
+.nav-active {
+    color: #198754;
+    font-weight: bold;
+}
+
+.nav-active:hover {
+    color: #198754;
+    font-weight: bold;
+}

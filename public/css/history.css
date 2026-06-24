@@ -1,0 +1,9 @@
+.icon-image {
+    width: 80px; /* Ukuran tetap */
+    height: 80px; /* Tinggi tetap agar gambar proporsional */
+    object-fit: contain; /* Menjaga proporsi asli gambar */
+    display: block;
+    margin: 0 auto; /* Tengah secara horizontal */
+}
+
+
